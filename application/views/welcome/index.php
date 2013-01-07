@@ -12,7 +12,7 @@
                     <a class="brand" href="#">Home</a>
                     <ul class="nav">
                         <li>
-                            <a href="#">Link</a>
+                            <a href="#">Wyszukaj</a>
                         </li>
                     </ul>
                 </div>
