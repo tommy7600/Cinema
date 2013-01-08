@@ -9,7 +9,9 @@ class Controller_AdM_Auth extends Controller_Admin {
         $post = $this->request->post();
         if (isset($post['username'], $post['password']))
         {
-            if (Auth::instance()->login($post['username'], $post['password'])&&Auth::instance()->logged_in('admin'))
+            $logged_in =Auth::instance()->login($post['username'], $post['password']);
+            
+            if ($logged_in&&Auth::instance()->logged_in('admin'))
             {
                     HTTP::redirect('admin');
             }
