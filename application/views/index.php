@@ -13,15 +13,11 @@
                     <ul class="nav">
                         <?php foreach ($a_page as $page): ?>
 
-                            <?php if ($actual_page == $page[0]): ?>  
-                                <li class="active">                  
+                            
+                                <li <?php if ($actual_page == $page[0]): ?> class="active"<?php endif; ?>>                  
                                     <?php echo '<a href=' . $page[1] . '>' . $page[2] . '</a>'; ?>
-                                </li>
-                            <?php else: ?>
-                                <li>                  
-                                    <?php echo '<a href=' . $page[1] . '>' . $page[2] . '</a>'; ?>
-                                </li>
-                            <?php endif; ?>
+                               </li>
+                            
                         <?php endforeach; ?>
                     </ul>
                 </div>
