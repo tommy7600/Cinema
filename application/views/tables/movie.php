@@ -25,8 +25,7 @@
                 </th>
                 
                 <td>
-                       <a href="javascript:decision('Czy na pewno chcesz zrobić rezerwację na ten film?',
-                       'reservation')"><i class="icon-flag"></i></a>
+                       <a href="wstawLinkaDoRemove" class="confirm"><i class="icon-flag"></i></a>
                 </td>
             </tr>
 

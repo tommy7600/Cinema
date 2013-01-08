@@ -26,11 +26,13 @@
                     </ul>
                 </div>
             </div>
-            <script src="/assets/js/jquery-1.8.2.min.js"></script>
-            <script src="/assets/js/bootstrap.js"></script>                        
             <div class="container-fluid">
                 <?php include Kohana::find_file('views', $content) ?>
             </div>
         </div>
+        
+        <script src="/assets/js/jquery-1.8.2.min.js"></script>
+        <script src="/assets/js/bootstrap.js"></script>                       
+        <script src="/assets/js/core.js"></script>
     </body>
 </html> 

@@ -245,3 +245,33 @@
 #10 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
 #11 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
 #12 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\tables\movie.php:18
+2013-01-08 06:09:06 --- CRITICAL: Kohana_Exception [ 0 ]: A valid cookie salt is required. Please set Cookie::$salt. ~ SYSPATH\classes\Kohana\Cookie.php [ 152 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:06 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php(67): Kohana_Cookie::salt('session', NULL)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(155): Kohana_Cookie::get('session')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(117): Kohana_Request::factory(true, Array, false)
+#3 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:06 --- CRITICAL: Kohana_Exception [ 0 ]: A valid cookie salt is required. Please set Cookie::$salt. ~ SYSPATH\classes\Kohana\Cookie.php [ 152 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:06 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php(67): Kohana_Cookie::salt('session', NULL)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(155): Kohana_Cookie::get('session')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(117): Kohana_Request::factory(true, Array, false)
+#3 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:06 --- CRITICAL: Kohana_Exception [ 0 ]: A valid cookie salt is required. Please set Cookie::$salt. ~ SYSPATH\classes\Kohana\Cookie.php [ 152 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:06 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php(67): Kohana_Cookie::salt('session', NULL)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(155): Kohana_Cookie::get('session')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(117): Kohana_Request::factory(true, Array, false)
+#3 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:17 --- CRITICAL: Kohana_Exception [ 0 ]: A valid cookie salt is required. Please set Cookie::$salt. ~ SYSPATH\classes\Kohana\Cookie.php [ 152 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:17 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php(67): Kohana_Cookie::salt('session', NULL)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(155): Kohana_Cookie::get('session')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(117): Kohana_Request::factory(true, Array, false)
+#3 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:18 --- CRITICAL: Kohana_Exception [ 0 ]: A valid cookie salt is required. Please set Cookie::$salt. ~ SYSPATH\classes\Kohana\Cookie.php [ 152 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:09:18 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php(67): Kohana_Cookie::salt('session', NULL)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(155): Kohana_Cookie::get('session')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(117): Kohana_Request::factory(true, Array, false)
+#3 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:11:53 --- CRITICAL: Kohana_Exception [ 0 ]: A valid cookie salt is required. Please set Cookie::$salt. ~ SYSPATH\classes\Kohana\Cookie.php [ 152 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
+2013-01-08 06:11:53 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php(67): Kohana_Cookie::salt('session', NULL)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(155): Kohana_Cookie::get('session')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(117): Kohana_Request::factory(true, Array, false)
+#3 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Cookie.php:67
