@@ -6,7 +6,7 @@ return array
 	(
 		'type'       => 'MySQL',
 		'connection' => array(
-			'hostname'   => 'http://vm-phpnursery.future-processing.lan',
+			'hostname'   => 'vm-phpnursery.future-processing.lan',
 			'database'   => 'pn_cinema',
 			'username'   => 'pkalita',
 			'password'   => 'q1w2e3r4',
