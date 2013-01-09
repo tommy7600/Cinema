@@ -22,7 +22,6 @@ class Controller_Admin extends Controller_Template {
             $this->template->content =  View::factory($this->content);
         }
     }
-    }
     
     public function after() {
                   

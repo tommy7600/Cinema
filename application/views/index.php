@@ -45,7 +45,9 @@ $user = Auth::instance();
                 </div>
             </div>
             <div class="container-fluid">
-                <?php echo isset($content) ? $content : ''; ?>
+                <?php if (isset($content)): ?>
+                    <?php include $content; ?>
+                <?php endif ?>
             </div>
         </div>
 

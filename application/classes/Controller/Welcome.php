@@ -6,6 +6,10 @@ class Controller_Welcome extends Controller_Template_Website {
 	public function action_index()
 	{	
            $this->template->actual_page = 'home';
+           $days = Helper_DayCalculator::CalculateDays();
+           $this->template->days = $days;
+           $this->template->selected = date('Y-m-d');
+            
 	}
 
-} // End Welcome
+} 

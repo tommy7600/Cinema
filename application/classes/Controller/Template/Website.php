@@ -4,9 +4,11 @@ class Controller_Template_Website extends Kohana_Controller_Template {
     
     public function before() {
         parent::before();
-        if ( Kohana::find_file('views',$this->content) )
+        
+        $path = Kohana::find_file('views',$this->content);        
+        if ($path)
         {
-            $this->template->content =  View::factory($this->content);
+            $this->template->content = $path;
         }
     }
 }
