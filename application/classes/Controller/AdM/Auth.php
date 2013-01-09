@@ -13,7 +13,7 @@ class Controller_AdM_Auth extends Controller_Admin {
             
             if ($logged_in&&Auth::instance()->logged_in('admin'))
             {
-                    HTTP::redirect('admin');
+                    HTTP::redirect('/');
             }
          else{
                     $this->template->error = 'Błędne dane.';
