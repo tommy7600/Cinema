@@ -32,5 +32,3 @@ class Controller_Searcher extends Controller_Template_Website {
         $this->template->titles = $titles_typeahead;
     }
 }
-
-?>

@@ -39,7 +39,7 @@
         <tbody>
             <?php foreach ($movies as $title => $info): ?>
             <tr>
-                <td> <?php echo $title ?> </td>
+                <td> <a href="#movieDescription" role="button" data-toggle="modal"> <?php echo $title ?> </a> </td>
                 <td> <?php echo $info[0] ?> </td>
                 <td> <?php echo $info[1] ?> </td>
             </tr>
@@ -47,4 +47,4 @@
         </tbody>
     </table>
 </div>
-<?php endif; ?>
+<?php endif; 
