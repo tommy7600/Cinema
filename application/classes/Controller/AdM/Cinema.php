@@ -8,4 +8,11 @@ class Controller_AdM_Cinema extends Controller_Admin {
         $this->template->content ='adm_cinema/index';
         $this->template->actual_page ='administrate';
         }
+        
+        public function action_add()
+        {
+           
+        }
+        
+        //public function _action
 }
