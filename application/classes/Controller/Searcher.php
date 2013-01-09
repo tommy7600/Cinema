@@ -1,6 +1,7 @@
 <?php
 
-class Controller_Searcher extends Controller_Template_Website {
+class Controller_Searcher extends Controller_Template_Website 
+{
     public $template='index';
     
     public function action_index()
