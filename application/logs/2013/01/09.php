@@ -110,6 +110,412 @@
 #5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
 #6 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
 #7 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Searcher.php:12
+<<<<<<< HEAD
+2013-01-09 03:08:26 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: actual_page ~ APPPATH\views\index.php [ 17 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php:17
+2013-01-09 03:08:26 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(17): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Admin.php(23): Kohana_Controller_Template->after()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Controller_Admin->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php:17
+2013-01-09 03:08:48 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: actual_page ~ APPPATH\views\index.php [ 17 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php:17
+2013-01-09 03:08:48 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(17): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Admin.php(23): Kohana_Controller_Template->after()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Controller_Admin->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php:17
+2013-01-09 03:20:40 --- CRITICAL: ErrorException [ 8 ]: A non well formed numeric value encountered ~ APPPATH\classes\Controller\Welcome.php [ 8 ] in :
+2013-01-09 03:20:40 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(8, 'A non well form...', 'C:\xampp\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php(8): getdate('13:01:09')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Welcome->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-01-09 03:29:09 --- CRITICAL: ErrorException [ 8 ]: Array to string conversion ~ APPPATH\views\welcome\index.php [ 5 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 03:29:09 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(5): Kohana_Core::error_handler(8, 'Array to string...', 'C:\xampp\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 03:31:24 --- CRITICAL: ErrorException [ 2 ]: Attempt to assign property of non-object ~ APPPATH\classes\Controller\Welcome.php [ 21 ] in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:21
+2013-01-09 03:31:24 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php(21): Kohana_Core::error_handler(2, 'Attempt to assi...', 'C:\xampp\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Welcome->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#7 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:21
+2013-01-09 03:31:36 --- CRITICAL: Kohana_Exception [ 0 ]: View variable is not set: content ~ SYSPATH\classes\Kohana\View.php [ 171 ] in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:18
+2013-01-09 03:31:36 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php(18): Kohana_View->__get('content')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Welcome->action_index()
+#2 [internal function]: Kohana_Controller->execute()
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#7 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:18
+2013-01-09 03:32:06 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: days ~ APPPATH\views\welcome\index.php [ 3 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 03:32:06 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(3): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 04:06:27 --- CRITICAL: ErrorException [ 8 ]: Undefined index: day ~ APPPATH\views\welcome\index.php [ 5 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:06:27 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(5): Kohana_Core::error_handler(8, 'Undefined index...', 'C:\xampp\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:07:09 --- CRITICAL: ErrorException [ 8 ]: Array to string conversion ~ APPPATH\views\welcome\index.php [ 5 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:07:09 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(5): Kohana_Core::error_handler(8, 'Array to string...', 'C:\xampp\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:07:23 --- CRITICAL: ErrorException [ 8 ]: Undefined index: date ~ APPPATH\views\welcome\index.php [ 5 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:07:23 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(5): Kohana_Core::error_handler(8, 'Undefined index...', 'C:\xampp\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:08:40 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 0 ~ APPPATH\views\welcome\index.php [ 5 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:08:40 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(5): Kohana_Core::error_handler(8, 'Undefined offse...', 'C:\xampp\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:09:15 --- CRITICAL: ErrorException [ 8 ]: Undefined index: day ~ APPPATH\views\welcome\index.php [ 5 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:09:15 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(5): Kohana_Core::error_handler(8, 'Undefined index...', 'C:\xampp\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:5
+2013-01-09 04:43:37 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 0 ~ APPPATH\views\welcome\index.php [ 11 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:11
+2013-01-09 04:43:37 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(11): Kohana_Core::error_handler(8, 'Undefined offse...', 'C:\xampp\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:11
+2013-01-09 04:43:48 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 0 ~ APPPATH\views\welcome\index.php [ 11 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:11
+2013-01-09 04:43:48 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(11): Kohana_Core::error_handler(8, 'Undefined offse...', 'C:\xampp\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:11
+2013-01-09 05:33:12 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:33:12 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:34:33 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:34:33 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:34:44 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:34:44 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:36:31 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:36:31 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:38:48 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:38:48 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:42:02 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:42:02 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:42:08 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:42:08 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:43:12 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:43:12 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:44:19 --- CRITICAL: View_Exception [ 0 ]: The requested view template could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:44:19 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(137): Kohana_View->set_filename('template')
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(30): Kohana_View->__construct('template', NULL)
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(33): Kohana_View::factory('template')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(69): Kohana_Controller_Template->before()
+#4 [internal function]: Kohana_Controller->execute()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#9 {main} in C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php:137
+2013-01-09 05:47:33 --- CRITICAL: ErrorException [ 8 ]: Undefined index: date ~ APPPATH\classes\Controller\Seances.php [ 9 ] in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php:9
+2013-01-09 05:47:33 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(9): Kohana_Core::error_handler(8, 'Undefined index...', 'C:\xampp\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_get_seances()
+#2 [internal function]: Kohana_Controller->execute()
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#7 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php:9
+2013-01-09 05:48:48 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: actual_page ~ APPPATH\views\index.php [ 17 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php:17
+2013-01-09 05:48:48 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(17): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php:17
+2013-01-09 05:51:08 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: days ~ APPPATH\views\welcome\index.php [ 3 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 05:51:08 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(3): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 05:56:13 --- CRITICAL: ErrorException [ 1 ]: Class 'DayCalculator' not found ~ APPPATH\classes\Controller\Welcome.php [ 8 ] in :
+2013-01-09 05:56:13 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 05:57:18 --- CRITICAL: ErrorException [ 1 ]: Class 'DayCalculator' not found ~ APPPATH\classes\Controller\Welcome.php [ 8 ] in :
+2013-01-09 05:57:18 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 05:57:26 --- CRITICAL: ErrorException [ 1 ]: Class 'DayCalculator' not found ~ APPPATH\classes\Controller\Welcome.php [ 8 ] in :
+2013-01-09 05:57:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 05:59:33 --- CRITICAL: ErrorException [ 2 ]: include(classes/Helper/DayCalculator.php): failed to open stream: No such file or directory ~ APPPATH\classes\Controller\Welcome.php [ 8 ] in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:8
+2013-01-09 05:59:33 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php(8): Kohana_Core::error_handler(2, 'include(classes...', 'C:\xampp\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php(8): Controller_Welcome::action_index()
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Welcome->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:8
+2013-01-09 05:59:51 --- CRITICAL: ErrorException [ 2 ]: include(../classes/Helper/DayCalculator.php): failed to open stream: No such file or directory ~ APPPATH\classes\Controller\Welcome.php [ 8 ] in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:8
+2013-01-09 05:59:51 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php(8): Kohana_Core::error_handler(2, 'include(../clas...', 'C:\xampp\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php(8): Controller_Welcome::action_index()
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Welcome->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Welcome.php:8
+2013-01-09 06:02:22 --- CRITICAL: ErrorException [ 1 ]: Class 'DayCalculator' not found ~ APPPATH\classes\Controller\Welcome.php [ 9 ] in :
+2013-01-09 06:02:22 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 06:06:38 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '}' ~ APPPATH\classes\Controller\Seances.php [ 12 ] in :
+2013-01-09 06:06:38 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 06:11:14 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: selectedd ~ APPPATH\views\welcome\index.php [ 3 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 06:11:14 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(3): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 06:14:11 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: selected ~ APPPATH\views\welcome\index.php [ 3 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 06:14:11 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(3): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:3
+2013-01-09 06:14:35 --- CRITICAL: ErrorException [ 2 ]: Invalid argument supplied for foreach() ~ APPPATH\views\welcome\index.php [ 2 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:2
+2013-01-09 06:14:35 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(2): Kohana_Core::error_handler(2, 'Invalid argumen...', 'C:\xampp\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:2
+2013-01-09 06:14:46 --- CRITICAL: ErrorException [ 2 ]: Invalid argument supplied for foreach() ~ APPPATH\views\welcome\index.php [ 2 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:2
+2013-01-09 06:14:46 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(2): Kohana_Core::error_handler(2, 'Invalid argumen...', 'C:\xampp\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:2
+2013-01-09 06:14:59 --- CRITICAL: ErrorException [ 2 ]: Invalid argument supplied for foreach() ~ APPPATH\views\welcome\index.php [ 2 ] in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:2
+2013-01-09 06:14:59 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php(2): Kohana_Core::error_handler(2, 'Invalid argumen...', 'C:\xampp\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\application\views\index.php(26): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\phpnursery\Cinema\application\views\welcome\index.php:2
+=======
 2013-01-09 04:15:11 --- CRITICAL: ErrorException [ 2 ]: mysql_data_seek() expects parameter 2 to be long, string given ~ MODPATH\database\classes\Kohana\Database\MySQL\Result.php [ 33 ] in :
 2013-01-09 04:15:11 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'mysql_data_seek...', 'C:\xampp\htdocs...', 33, Array)
 #1 C:\xampp\htdocs\Cinema\modules\database\classes\Kohana\Database\MySQL\Result.php(33): mysql_data_seek(Resource id #86, 'name')
@@ -245,3 +651,4 @@
 #9 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
 #10 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
 #11 {main} in C:\xampp\htdocs\Cinema\application\views\searcher\index.php:40
+>>>>>>> 003d84da22375d5274c5e95bfc86a95cf142b087
