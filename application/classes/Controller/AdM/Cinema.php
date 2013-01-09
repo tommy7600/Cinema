@@ -7,9 +7,9 @@ class Controller_AdM_Cinema extends Controller_Admin {
         
         public function action_index() {               
         $this->template->actual_page ='administrate';
-        $shows = ORM::factory('seances')
+        $seances = ORM::factory('seances')
              ->find_all();
-        $this->template->shows=$shows;
+        $this->template->shows=$seances;
         }
         
         public function action_add_show()
