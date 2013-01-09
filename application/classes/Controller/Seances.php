@@ -2,8 +2,8 @@
     class Controller_Seances extends Controller_Template_Website 
     {
         public $template='index';        
-        public $content ='welcome/index';
-        public function action_get_seances()
+        public $content ='seances/index';
+        public function action_index()
         {
             
             $date = $this->request->query('date');
