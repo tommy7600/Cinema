@@ -45,7 +45,7 @@ $user = Auth::instance();
                 </div>
             </div>
             <div class="container-fluid">
-                <?php include Kohana::find_file('views', $content) ?>
+                <?php echo isset($content) ? $content : ''; ?>
             </div>
         </div>
 

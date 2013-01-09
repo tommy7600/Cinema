@@ -3,6 +3,7 @@
 class Controller_Admin extends Controller_Template {
     public $template = 'index';
     protected $title = '';
+    protected $content='';
     public function before()
     {
         
@@ -15,7 +16,12 @@ class Controller_Admin extends Controller_Template {
         }
         parent::before();
         
-        $this->template->content = strtolower($this->request->controller().DIRECTORY_SEPARATOR.$this->request->action());
+        $this->content = strtolower($this->request->controller().DIRECTORY_SEPARATOR.$this->request->action());
+        if ( Kohana::find_file('views',$this->content) )
+        {
+            $this->template->content =  View::factory($this->content);
+        }
+    }
     }
     
     public function after() {

@@ -1,7 +1,8 @@
 <?php
 
 class Controller_Searcher extends Controller_Template_Website {
-    public $template='index';
+    public $template='index';    
+    public $content ='searcher/index';
     
     public function action_index()
     {        
@@ -16,7 +17,6 @@ class Controller_Searcher extends Controller_Template_Website {
         $titles_typeahead = '["'.implode('","', $titles).'"]';
 
         $this->template->actual_page = 'search';
-        $this->template->content ='searcher/index';
         $this->template->genres = $genres;
         $this->template->titles = $titles_typeahead;
     }

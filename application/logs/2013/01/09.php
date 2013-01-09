@@ -218,3 +218,93 @@
 2013-01-09 04:40:20 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in :
 >>>>>>> fb6253cfd2751c384584512c46eb423078893a6e
+
+2013-01-09 06:01:11 --- CRITICAL: ErrorException [ 2 ]: include(): Filename cannot be empty ~ APPPATH\views\index.php [ 48 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php:48
+2013-01-09 06:01:11 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php(48): Kohana_Core::error_handler(2, 'include(): File...', 'D:\SvnTortoise\...', 48, Array)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php(48): include()
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(61): include('D:\SvnTortoise\...')
+#3 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\SvnTortoise\...', Array)
+#4 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php:48
+2013-01-09 06:02:48 --- CRITICAL: ErrorException [ 8 ]: Undefined property: Controller_Welcome::$uri ~ APPPATH\classes\Controller\Template\Website.php [ 7 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php:7
+2013-01-09 06:02:48 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php(7): Kohana_Core::error_handler(8, 'Undefined prope...', 'D:\SvnTortoise\...', 7, Array)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller.php(69): Controller_Template_Website->before()
+#2 [internal function]: Kohana_Controller->execute()
+#3 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#4 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
+#7 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php:7
+2013-01-09 06:03:18 --- CRITICAL: ErrorException [ 2 ]: include(welcome/index): failed to open stream: No such file or directory ~ APPPATH\views\index.php [ 48 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php:48
+2013-01-09 06:03:18 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php(48): Kohana_Core::error_handler(2, 'include(welcome...', 'D:\SvnTortoise\...', 48, Array)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php(48): include()
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(61): include('D:\SvnTortoise\...')
+#3 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\SvnTortoise\...', Array)
+#4 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#8 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php:48
+2013-01-09 06:03:49 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected 'echo' (T_ECHO) ~ APPPATH\views\index.php [ 48 ] in :
+2013-01-09 06:03:49 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 06:08:49 --- CRITICAL: ErrorException [ 8 ]: Undefined property: Controller_Searcher::$content ~ APPPATH\classes\Controller\Template\Website.php [ 7 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php:7
+2013-01-09 06:08:49 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php(7): Kohana_Core::error_handler(8, 'Undefined prope...', 'D:\SvnTortoise\...', 7, Array)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller.php(69): Controller_Template_Website->before()
+#2 [internal function]: Kohana_Controller->execute()
+#3 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#4 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
+#7 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php:7
+2013-01-09 06:21:41 --- CRITICAL: ErrorException [ 4096 ]: Argument 2 passed to Kohana_View::factory() must be of the type array, string given, called in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php on line 9 and defined ~ SYSPATH\classes\Kohana\View.php [ 28 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php:28
+2013-01-09 06:21:41 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(28): Kohana_Core::error_handler(4096, 'Argument 2 pass...', 'D:\SvnTortoise\...', 28, Array)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\classes\Controller\Template\Website.php(9): Kohana_View::factory('views', 'welcome/index')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller.php(69): Controller_Template_Website->before()
+#3 [internal function]: Kohana_Controller->execute()
+#4 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Welcome))
+#5 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php:28
+2013-01-09 06:27:01 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: genres ~ APPPATH\views\searcher\index.php [ 4 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\searcher\index.php:4
+2013-01-09 06:27:01 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\searcher\index.php(4): Kohana_Core::error_handler(8, 'Undefined varia...', 'D:\SvnTortoise\...', 4, Array)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(61): include('D:\SvnTortoise\...')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\SvnTortoise\...', Array)
+#3 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php(48): Kohana_View->__toString()
+#5 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(61): include('D:\SvnTortoise\...')
+#6 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\SvnTortoise\...', Array)
+#7 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#11 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#13 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
+#14 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\searcher\index.php:4
+2013-01-09 06:27:42 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: genres ~ APPPATH\views\searcher\index.php [ 4 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\searcher\index.php:4
+2013-01-09 06:27:42 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\searcher\index.php(4): Kohana_Core::error_handler(8, 'Undefined varia...', 'D:\SvnTortoise\...', 4, Array)
+#1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(61): include('D:\SvnTortoise\...')
+#2 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\SvnTortoise\...', Array)
+#3 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\index.php(48): Kohana_View->__toString()
+#5 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(61): include('D:\SvnTortoise\...')
+#6 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('D:\SvnTortoise\...', Array)
+#7 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#11 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#13 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
+#14 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\searcher\index.php:4
