@@ -218,3 +218,30 @@
 2013-01-09 04:40:20 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in :
 >>>>>>> fb6253cfd2751c384584512c46eb423078893a6e
+
+2013-01-09 05:26:54 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: movies ~ APPPATH\views\searcher\index.php [ 36 ] in C:\xampp\htdocs\Cinema\application\views\searcher\index.php:36
+2013-01-09 05:26:54 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\views\searcher\index.php(36): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\Cinema\application\views\index.php(48): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#8 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\Cinema\application\views\searcher\index.php:36
+2013-01-09 05:27:45 --- CRITICAL: ErrorException [ 8 ]: Array to string conversion ~ APPPATH\views\searcher\index.php [ 40 ] in C:\xampp\htdocs\Cinema\application\views\searcher\index.php:40
+2013-01-09 05:27:45 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\views\searcher\index.php(40): Kohana_Core::error_handler(8, 'Array to string...', 'C:\xampp\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\Cinema\application\views\index.php(48): include('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\View.php(61): include('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\Cinema\system\classes\Kohana\View.php(348): Kohana_View::capture('C:\xampp\htdocs...', Array)
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#8 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#11 {main} in C:\xampp\htdocs\Cinema\application\views\searcher\index.php:40
