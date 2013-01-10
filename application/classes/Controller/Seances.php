@@ -21,11 +21,12 @@
                 $movies[] = $seance->movie;
             }
 
+            //var_dump($seances);
             $days = Helper_DayCalculator::CalculateDays();
             $this->template->actual_page = 'home';
             $this->template->days = $days;
             $this->template->selected = $date;
-            $this->templete->seances = $seances;
+            //$this->templete->seances = $seances;
         }
     }
 ?>
