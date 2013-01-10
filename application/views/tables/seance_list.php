@@ -13,24 +13,21 @@
         </tr>
     </thead>
 
-    <tbody>    
-
+    <tbody>
         <?php foreach ($seances as $seance): ?>
             <tr>
-                <th>
+                <td>
                     <?php echo $seance->time; ?>
-                </th>
-                <th>
+                </td>
+
+                <td>
                     <?php echo $seance->movie->title; ?>
-                </th>
+                </td>
                 
                 <td>
                        <a href="wstawLinkaDoRemove" class="confirm"><i class="icon-flag"></i></a>
                 </td>
             </tr>
-
         <?php endforeach; ?>
-
     </tbody>
-
 </table>
