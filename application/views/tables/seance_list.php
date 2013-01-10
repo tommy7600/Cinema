@@ -8,6 +8,9 @@
             <th>
                 Title
             </th>
+            <th style = "width: 15%">
+                Duration [min]
+            </th>
             <?php if($logged_as): ?>
                 <th>
                     Options
@@ -25,6 +28,10 @@
 
                 <td>
                     <?php echo $seance->movie->title; ?>
+                </th>
+
+                <td>
+                    <?php echo $seance->movie->duration; ?>
                 </th>
                 <?php if($logged_as): ?>
                     <td>
