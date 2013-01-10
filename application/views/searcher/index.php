@@ -21,4 +21,5 @@
         <button type = "submit">Szukaj</button>
     </div>
 </form>
+
 <?php include Kohana::find_file('views', 'movie/table')  ?>
