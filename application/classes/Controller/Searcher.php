@@ -12,16 +12,17 @@ class Controller_Searcher extends Controller_Template_Website {
         if($title)
         {
             $movies = $this->get_serched_movies_by_title($title);
+            $this->set_movies_table($movies);
         }
         elseif ($genre AND !$title)
         {
             $movies = $this->get_serched_movies_by_genres($genre);
+            $this->set_movies_table($movies);
         }
         
         
         $this->template->actual_page = 'search';
         $this->set_searching_fields();
-        $this->set_movies_table($movies);
     }
     
     private function set_searching_fields()
