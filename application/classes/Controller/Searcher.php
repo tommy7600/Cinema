@@ -20,7 +20,6 @@ class Controller_Searcher extends Controller_Template_Website {
             $this->set_movies_table($movies);
         }
         
-        
         $this->template->actual_page = 'search';
         $this->set_searching_fields();
     }
@@ -40,13 +39,13 @@ class Controller_Searcher extends Controller_Template_Website {
         $this->template->titles = $titles_typeahead;
     }
     
-    private function set_movies_table($movies)
+    private function set_movies_table(array $movies)
     {
         $movies_table = array();
         foreach($movies as $movie)
         {
             $genres = $this->get_movie_genres($movie);
-            $movies_table[$movie->title] = array(implode(', ', $genres), 'PN 20:30');
+            $movies_table[$movie->title] = array('genres' => implode(', ', $genres), 'seances' => 'PN 20:30');
         }
         $this->template->movies = $movies_table;
     }
@@ -57,7 +56,13 @@ class Controller_Searcher extends Controller_Template_Website {
                 ->where('title', 'LIKE', '%'.$title.'%')
                 ->find_all();
         
-        return $movies;
+        $movie_list = array();
+        foreach ($movies as $movie)
+        {
+            $movie_list[] = $movie;
+        }
+        
+        return $movie_list;
     }
     
     private function get_serched_movies_by_genres($genre)
@@ -65,24 +70,24 @@ class Controller_Searcher extends Controller_Template_Website {
         $genres = ORM::factory('genre')
                 ->where('id','in',$genre)
                 ->find_all();
-
+        
+        $movie_list = array();
         foreach ($genres as $value)
         {
             $movies = $value->movies->find_all();
-        }
-
-        foreach ($genres as $value)
+            foreach ($movies as $movie)
             {
-                $string2[] = $value->name;
+                $movie_list[] = $movie;
             }
-            xdebug_var_dump($string2);
-            
-        return $movies;
+        }
+        
+        return $movie_list;
     }
     
     private function get_movie_genres($movie)
     {
         $genres = $movie->genres->find_all();
+        $genre_list = array();
         foreach($genres as $genre)
         {
             $genre_list[] = $genre->name;
