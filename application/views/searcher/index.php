@@ -1,4 +1,4 @@
-<?php //include "\movie\description.php"; ?>
+<?php include Kohana::find_file('views', 'movie/description')  ?>
 
 <form class="form-inline" action = "" method = "get">
     <div class="controls">
@@ -21,6 +21,7 @@
         <button type = "submit">Szukaj</button>
     </div>
 </form>
+<<<<<<< HEAD
 
 <?php if(isset($movies)): ?>
 <div>
@@ -51,3 +52,6 @@
     </table>
 </div>
 <?php endif; 
+=======
+<?php include Kohana::find_file('views', 'movie/table')  ?>
+>>>>>>> 511176dd1acd2f036d162dfaa01d51424480a8f8

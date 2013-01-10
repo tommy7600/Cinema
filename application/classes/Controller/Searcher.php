@@ -8,33 +8,24 @@ class Controller_Searcher extends Controller_Template_Website {
     {   
         $genre = $this->request->query('genre');
         $title = $this->request->query('title');
-        //xdebug_var_dump($genre);
+        
         if($title)
         {
-            $this->template->movies = array('movie1' => array('thriller', 'PN 20:30'), 'movie2' => array('horror', 'WT 20:30'));
             $movies = $this->get_serched_movies_by_title($title);
-            $genres = $this->get_serched_movies_by_genres($genre);
-            foreach ($movies as $value)
-            {
-                $string1[] = $value->title;
-            }
-            foreach ($genres as $value)
-            {
-                $string2[] = $value->title;
-            }
-            xdebug_var_dump($string1);
-            xdebug_var_dump($string2);
+            $this->set_movies_table($movies);
         }
-        elseif ($genre) 
+        elseif ($genre AND !$title)
         {
-            $genres = $this->get_serched_movies_by_genres($genre);
-            foreach ($genres as $value)
-            {
-                $string2[] = $value->title;
-            }
-            xdebug_var_dump($string2);
+            $movies = $this->get_serched_movies_by_genres($genre);
+            $this->set_movies_table($movies);
         }
         
+        $this->template->actual_page = 'search';
+        $this->set_searching_fields();
+    }
+    
+    private function set_searching_fields()
+    {
         $genres = ORM::factory('Genre')->find_all();
         $movies = ORM::factory('Movie')->find_all();
         
@@ -42,12 +33,21 @@ class Controller_Searcher extends Controller_Template_Website {
         {
             $titles[] = $movie->title;
         }
-        
         $titles_typeahead = '["'.implode('","', $titles).'"]';
-
-        $this->template->actual_page = 'search';
+        
         $this->template->genres = $genres;
         $this->template->titles = $titles_typeahead;
+    }
+    
+    private function set_movies_table(array $movies)
+    {
+        $movies_table = array();
+        foreach($movies as $movie)
+        {
+            $genres = $this->get_movie_genres($movie);
+            $movies_table[$movie->title] = array('genres' => implode(', ', $genres), 'seances' => 'PN 20:30');
+        }
+        $this->template->movies = $movies_table;
     }
     
     private function get_serched_movies_by_title($title)
@@ -56,13 +56,13 @@ class Controller_Searcher extends Controller_Template_Website {
                 ->where('title', 'LIKE', '%'.$title.'%')
                 ->find_all();
         
-        foreach($movies as $value)
+        $movie_list = array();
+        foreach ($movies as $movie)
         {
-            $genres = $value->genres->find_all();
+            $movie_list[] = $movie;
         }
         
-        
-        return $movies;
+        return $movie_list;
     }
     
     private function get_serched_movies_by_genres($genre)
@@ -70,18 +70,29 @@ class Controller_Searcher extends Controller_Template_Website {
         $genres = ORM::factory('genre')
                 ->where('id','in',$genre)
                 ->find_all();
-
+        
+        $movie_list = array();
         foreach ($genres as $value)
         {
             $movies = $value->movies->find_all();
-        }
-
-        foreach ($genres as $value)
+            foreach ($movies as $movie)
             {
-                $string2[] = $value->name;
+                $movie_list[] = $movie;
             }
-            xdebug_var_dump($string2);
-            
-        return $movies;
+        }
+        
+        return $movie_list;
+    }
+    
+    private function get_movie_genres($movie)
+    {
+        $genres = $movie->genres->find_all();
+        $genre_list = array();
+        foreach($genres as $genre)
+        {
+            $genre_list[] = $genre->name;
+        }
+        
+        return $genre_list;
     }
 }

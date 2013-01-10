@@ -16,25 +16,22 @@
         </tr>
     </thead>
 
-    <tbody>    
-
+    <tbody>
         <?php foreach ($seances as $seance): ?>
             <tr>
-                <th>
+                <td>
                     <?php echo $seance->time; ?>
-                </th>
-                <th>
+                </td>
+
+                <td>
                     <?php echo $seance->movie->title; ?>
                 </th>
                 <?php if($logged_as): ?>
                     <td>
-                           <a href="wstawLinkaDoRemove" class="confirm"><i class="icon-remove"></i></a>
+                          <a href="wstawLinkaDoRemove" class="confirm"><i class="icon-remove"></i></a>
                     </td>
                 <?php endif; ?>
             </tr>
-
         <?php endforeach; ?>
-
     </tbody>
-
 </table>
