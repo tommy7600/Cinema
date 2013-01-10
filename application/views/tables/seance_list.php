@@ -28,7 +28,12 @@
                 </th>
                 <?php if($logged_as): ?>
                     <td>
-                          <a href="wstawLinkaDoRemove" class="confirm"><i class="icon-remove"></i></a>
+                         <a href="/adm_cinema/delete_show/<?php echo $seance->id ?>
+                            <?php if (isset($selected)): ?>
+                            /?date=<?php echo $selected ?>">                            
+                                <?php endif ?>
+                         <i class="icon-remove"></i>
+                         </a>
                     </td>
                 <?php endif; ?>
             </tr>

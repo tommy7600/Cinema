@@ -1,1 +1,1 @@
- <?php include Kohana::find_file('views', 'tables/seance_list') ?>
+ <?php //include Kohana::find_file('views', 'tables/seance_list') ?>

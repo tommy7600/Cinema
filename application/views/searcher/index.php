@@ -51,7 +51,5 @@
         </tbody>
     </table>
 </div>
-<?php endif; 
-=======
+<?php endif; ?>
 <?php include Kohana::find_file('views', 'movie/table')  ?>
->>>>>>> 511176dd1acd2f036d162dfaa01d51424480a8f8
