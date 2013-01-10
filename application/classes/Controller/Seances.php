@@ -16,8 +16,9 @@
             $movies = array();
 
 
-            $seances = ORM::factory('seance')->where('date', '=', $date)->find_all();
-            
+            $seances = ORM::factory('seance')->where('date', '=', $date)->order_by('time', 'asc')->find_all();
+
+
 
             $days = Helper_DayCalculator::CalculateDays();
             $this->template->actual_page = 'home';

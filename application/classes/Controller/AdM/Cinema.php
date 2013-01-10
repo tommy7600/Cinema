@@ -4,7 +4,7 @@ class Controller_AdM_Cinema extends Controller_Admin {
 
     public $template = 'index';
     public $content = 'adm_cinema/index';
-
+    private $uri='';
     public function action_index() {
         $this->template->actual_page = 'administrate';
         $seances = ORM::factory('seance')
@@ -22,11 +22,12 @@ class Controller_AdM_Cinema extends Controller_Admin {
         
         $this->_save(ORM::factory('seance'));
     }
-
     public function action_delete_show() {
-        $shows = ORM::factory('seances', (int) $this->request->param('id', 0))
+        $id_to_delete = (int) $this->request->param('id', 0);
+        $shows = ORM::factory('seance',$id_to_delete)
                 ->delete();
-        HTTP::redirect('adm');
+        $date_par=(string) $this->request->query('date');
+        HTTP::redirect('/seances?date=' .$date_par);
     }
 
     private function _save($movies) {
