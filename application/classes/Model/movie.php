@@ -7,7 +7,7 @@
                 'model' => 'genre',
                 'through' => 'movies_genres',
                 'foreign_key' => 'movie_id',
-                'far_key' => 'id'
+                'far_key' => 'genre_id'
             )
         );
     }
