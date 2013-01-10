@@ -176,3 +176,63 @@
 #7 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
 #8 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
 #9 {main} in C:\xampp\htdocs\Cinema\modules\orm\classes\Kohana\ORM.php:600
+2013-01-10 04:12:54 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: genres ~ APPPATH\classes\Controller\Searcher.php [ 99 ] in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:99
+2013-01-10 04:12:54 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(99): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(40): Controller_Searcher->get_movie_genres(Object(Model_Movie))
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(84): Controller_Searcher->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:99
+2013-01-10 04:14:28 --- CRITICAL: ErrorException [ 2 ]: Invalid argument supplied for foreach() ~ APPPATH\classes\Controller\Searcher.php [ 100 ] in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:100
+2013-01-10 04:14:28 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(100): Kohana_Core::error_handler(2, 'Invalid argumen...', 'C:\xampp\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(40): Controller_Searcher->get_movie_genres(Object(Model_Movie))
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(84): Controller_Searcher->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:100
+2013-01-10 04:14:50 --- CRITICAL: ErrorException [ 2 ]: Invalid argument supplied for foreach() ~ APPPATH\classes\Controller\Searcher.php [ 100 ] in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:100
+2013-01-10 04:14:50 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(100): Kohana_Core::error_handler(2, 'Invalid argumen...', 'C:\xampp\htdocs...', 100, Array)
+#1 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(40): Controller_Searcher->get_movie_genres(Object(Model_Movie))
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(84): Controller_Searcher->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:100
+2013-01-10 04:15:48 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: genres ~ APPPATH\classes\Controller\Searcher.php [ 99 ] in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:99
+2013-01-10 04:15:48 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(99): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(40): Controller_Searcher->get_movie_genres(Object(Model_Movie))
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(84): Controller_Searcher->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:99
+2013-01-10 04:16:57 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: genre_list ~ APPPATH\classes\Controller\Searcher.php [ 104 ] in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:104
+2013-01-10 04:16:57 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(104): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(40): Controller_Searcher->get_movie_genres(Object(Model_Movie))
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(84): Controller_Searcher->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:104
+2013-01-10 04:25:09 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: value ~ APPPATH\classes\Controller\Searcher.php [ 98 ] in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:98
+2013-01-10 04:25:09 --- DEBUG: #0 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(98): Kohana_Core::error_handler(8, 'Undefined varia...', 'C:\xampp\htdocs...', 98, Array)
+#1 C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php(40): Controller_Searcher->get_movie_genres(Object(Model_Movie))
+#2 C:\xampp\htdocs\Cinema\system\classes\Kohana\Controller.php(84): Controller_Searcher->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Searcher))
+#5 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 C:\xampp\htdocs\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 C:\xampp\htdocs\Cinema\index.php(118): Kohana_Request->execute()
+#8 {main} in C:\xampp\htdocs\Cinema\application\classes\Controller\Searcher.php:98
