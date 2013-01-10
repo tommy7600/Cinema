@@ -45,7 +45,8 @@ class Controller_Searcher extends Controller_Template_Website {
         foreach($movies as $movie)
         {
             $genres = $this->get_movie_genres($movie);
-            $movies_table[$movie->title] = array('genres' => implode(', ', $genres), 'seances' => 'PN 20:30');
+            $seances = $this->get_movie_seances($movie);
+            $movies_table[$movie->title] = array('genres' => implode(', ', $genres), 'seances' => $seances, 'description' => $movie->description);
         }
         $this->template->movies = $movies_table;
     }
@@ -94,5 +95,28 @@ class Controller_Searcher extends Controller_Template_Website {
         }
         
         return $genre_list;
+    }
+    
+    private function get_movie_seances($movie)
+    {
+        $seances = ORM::factory('seance')
+                ->where('movie_id', '=', $movie->id)
+                ->find_all();
+        $seance_list = array();
+        $prev_day = '';
+        foreach ($seances as $seance)
+        {
+            if(Date('l', strtotime($seance->date)) != $prev_day)
+            {
+                $prev_day = Date('l', strtotime($seance->date));
+                $seance_list[] = '<br>'.$prev_day.' ('.Date('Y-m-d', strtotime($seance->date)).') '.substr(Date($seance->time), 0, -3);
+            }
+            else
+            {
+                $seance_list[] = ' '.substr(Date($seance->time), 0, -3);
+            }
+            
+        }
+        return substr(implode(', ', $seance_list), 4);
     }
 }
