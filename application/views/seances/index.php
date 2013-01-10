@@ -2,11 +2,11 @@
    <?php foreach($days as $key => $value): ?>
         <?php if($selected == $value): ?>
             <li class="active">
-                <a href="/seances?date=<?php echo $value; ?>"><?php echo $key; ?></a>  
+                <a href="/seances?date=<?php echo $value; ?>"><?php echo $key; ?> (<?php echo date("m-d", strtotime($value)); ?>)</a>
             </li>
         <?php else: ?>
             <li>
-                <a href="/seances?date=<?php echo $value; ?>"><?php echo $key; ?></a>  
+                <a href="/seances?date=<?php echo $value; ?>"><?php echo $key; ?> (<?php echo date("m-d", strtotime($value)); ?>)</a>
             </li>
         <?php endif;?>
    <?php endforeach;?>
