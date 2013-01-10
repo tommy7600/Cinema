@@ -1,9 +1,11 @@
+<?php //include "\movie\description.php"; ?>
+
 <form class="form-inline" action = "" method = "get">
     <div class="controls">
         <h4>Gatunki</h4>
         <?php foreach ($genres as $genre): ?>
         <label class="checkbox">
-            <input type="checkbox" name="genre" value="<?php echo $genre->name ?>"> <?php echo $genre->name ?> &emsp;
+            <input type="checkbox" name="genre[]" value="<?php echo $genre->id ?>"> <?php echo $genre->name ?> &emsp;
         </label>
         <?php endforeach; ?>
     </div>
