@@ -64,12 +64,12 @@ class Controller_Searcher extends Controller_Template_Website {
         $genres = ORM::factory('genre')
                 ->where('id','in',$genre)
                 ->find_all();
-        
+
         foreach ($genres as $value)
         {
             $movies = $value->movies->find_all();
         }
-        
+
         foreach ($genres as $value)
             {
                 $string2[] = $value->name;

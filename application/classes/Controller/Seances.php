@@ -12,8 +12,7 @@
             {
                 $date = date('Y-m-d');
             }            
-            
-            
+
             $movies = array();
             $seances = ORM::factory('seance')->where('date', '=', $date)->find_all();
             
@@ -21,21 +20,13 @@
             {
                 $movies[] = $seance->movie;
             }
-//            $movies = ORM::factory('movie', 2);
-//
-//            $genres = $movies->genres->find_all();
-//
-//            foreach ($genres as $genre)
-//            {
-//                echo $genre->name;
-//            }
-            
-            
-            var_dump($movies[0]->title);
+
+            //var_dump($seances);
             $days = Helper_DayCalculator::CalculateDays();
             $this->template->actual_page = 'home';
             $this->template->days = $days;
             $this->template->selected = $date;
+            //$this->templete->seances = $seances;
         }
     }
 ?>
