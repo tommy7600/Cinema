@@ -3,13 +3,13 @@
 class Controller_AdM_Cinema extends Controller_Admin {
 
         public $template = 'index';
-        public  $content ='adm_cinema/index';
+        public $content ='adm_cinema/index';
         
         public function action_index() {               
         $this->template->actual_page ='administrate';
-        $seances = ORM::factory('seances')
+        $seances = ORM::factory('seance')
              ->find_all();
-        $this->template->shows=$seances;
+        $this->template->seances=$seances; 
         }
         
         public function action_add_show()
