@@ -15,14 +15,14 @@
             
             $seances = ORM::factory('seance')->where('date', '=', $date)->find_all();
             
-            $movies = ORM::factory('movie', 2);
-
-            $genres = $movies->genres->find_all();
-            
-            foreach ($genres as $genre)
-            {
-                echo $genre->name;
-            }
+//            $movies = ORM::factory('movie', 2);
+//
+//            $genres = $movies->genres->find_all();
+//
+//            foreach ($genres as $genre)
+//            {
+//                echo $genre->name;
+//            }
             
             //var_dump($genres);
             $days = Helper_DayCalculator::CalculateDays();
