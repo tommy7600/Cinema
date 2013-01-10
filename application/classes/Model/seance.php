@@ -1,11 +1,9 @@
 <?php
     class Model_Seance extends ORM
     {
-        protected $_has_one = array(
+        protected $_belongs_to = array(
             'movie' => array(
-                'model' => 'movie',
-                'foreign_key' => 'id'
-                )
-            );
+            )
+        );
     }
 ?>

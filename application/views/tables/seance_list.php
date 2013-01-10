@@ -2,26 +2,26 @@
     <thead>
         <tr>
             <th>
-                Godzina
+                Time
             </th>
             <th>
-                Tytuł
+                Title
             </th>
             <th>
-                Opis
+                Options
             </th>
         </tr>
     </thead>
 
     <tbody>    
 
-        <?php //foreach (): ?>
+        <?php foreach ($seances as $seance): ?>
             <tr>
                 <th>
-                    1
+                    <?php echo $seance->time; ?>
                 </th>
                 <th>
-                   Film
+                    <?php echo $seance->movie->title; ?>
                 </th>
                 
                 <td>
@@ -29,7 +29,7 @@
                 </td>
             </tr>
 
-        <?php //endforeach; ?>
+        <?php endforeach; ?>
 
     </tbody>
 
