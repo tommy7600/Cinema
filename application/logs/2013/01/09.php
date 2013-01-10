@@ -2436,6 +2436,7 @@ function koggle(elem)
 2013-01-09 06:46:40 --- CRITICAL: ErrorException [ 1 ]: Class 'Model_seances' not found ~ MODPATH\orm\classes\Kohana\ORM.php [ 46 ] in :
 2013-01-09 06:46:40 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in :
+<<<<<<< HEAD
 2013-01-09 07:09:12 --- CRITICAL: Database_Exception [ 1146 ]: Table 'pn_cinema.seanceses' doesn't exist [ SHOW FULL COLUMNS FROM `seanceses` ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\modules\database\classes\Kohana\Database\MySQL.php:358
 2013-01-09 07:09:12 --- DEBUG: #0 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\modules\database\classes\Kohana\Database\MySQL.php(358): Kohana_Database_MySQL->query(1, 'SHOW FULL COLUM...', false)
 #1 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\modules\orm\classes\Kohana\ORM.php(1665): Kohana_Database_MySQL->list_columns('seanceses')
@@ -6514,3 +6515,248 @@ function koggle(elem)
 #10 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
 #11 D:\SvnTortoise\phpnursery\ProjNursery\Cinema\index.php(118): Kohana_Request->execute()
 #12 {main} in D:\SvnTortoise\phpnursery\ProjNursery\Cinema\application\views\adm_cinema\index.php:3
+=======
+2013-01-09 07:34:57 --- CRITICAL: ErrorException [ 1 ]: Class 'Model_seances' not found ~ MODPATH\orm\classes\Kohana\ORM.php [ 46 ] in :
+2013-01-09 07:34:57 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 07:35:26 --- CRITICAL: ErrorException [ 1 ]: Class 'Model_seances' not found ~ MODPATH\orm\classes\Kohana\ORM.php [ 46 ] in :
+2013-01-09 07:35:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 07:35:32 --- CRITICAL: ErrorException [ 1 ]: Class 'Model_seances' not found ~ MODPATH\orm\classes\Kohana\ORM.php [ 46 ] in :
+2013-01-09 07:35:32 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 07:35:53 --- CRITICAL: ErrorException [ 1 ]: Class 'Model_seances' not found ~ MODPATH\orm\classes\Kohana\ORM.php [ 46 ] in :
+2013-01-09 07:35:53 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 07:36:13 --- CRITICAL: ErrorException [ 1 ]: Class 'Model_movies' not found ~ MODPATH\orm\classes\Kohana\ORM.php [ 46 ] in :
+2013-01-09 07:36:13 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-01-09 07:36:22 --- CRITICAL: Database_Exception [ 1146 ]: Table 'pn_cinema.movie_genre' doesn't exist [ SELECT `genre`.`id` AS `id`, `genre`.`name` AS `name` FROM `genres` AS `genre` JOIN `movie_genre` ON (`movie_genre`.`genre_id` = `genre`.`id`) WHERE `movie_genre`.`movie_id` IS NULL AND `id` = 2 LIMIT 1 ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:36:22 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `genre`....', false, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1069): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(976): Kohana_ORM->_load_result(false)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(19): Kohana_ORM->find()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:36:40 --- CRITICAL: Database_Exception [ 1146 ]: Table 'pn_cinema.movie_genre' doesn't exist [ SELECT `genre`.`id` AS `id`, `genre`.`name` AS `name` FROM `genres` AS `genre` JOIN `movie_genre` ON (`movie_genre`.`genre_id` = `genre`.`id`) WHERE `movie_genre`.`movie_id` IS NULL AND `id` = 2 LIMIT 1 ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:36:40 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `genre`....', false, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1069): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(976): Kohana_ORM->_load_result(false)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(19): Kohana_ORM->find()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:36:59 --- CRITICAL: Database_Exception [ 1052 ]: Column 'id' in where clause is ambiguous [ SELECT `genre`.`id` AS `id`, `genre`.`name` AS `name` FROM `genres` AS `genre` JOIN `movies_genres` ON (`movies_genres`.`genre_id` = `genre`.`id`) WHERE `movies_genres`.`movie_id` IS NULL AND `id` = 2 LIMIT 1 ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:36:59 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `genre`....', false, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1069): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(976): Kohana_ORM->_load_result(false)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(19): Kohana_ORM->find()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:37:49 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:37:49 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:40:05 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:40:05 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:46:38 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:46:38 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:48:34 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:48:34 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:48:50 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:48:50 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:49:08 --- CRITICAL: Database_Exception [ 1146 ]: Table 'pn_cinema.movie_genre' doesn't exist [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movie_genre` ON (`movie_genre`.`movy_id` = `movie`.`id`) WHERE `movie_genre`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:49:08 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:49:35 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:49:35 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:58:09 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:58:09 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:58:33 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 07:58:33 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:01:24 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:01:24 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:10:38 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movies_id' in 'where clause' [ SELECT `genre`.`id` AS `id`, `genre`.`name` AS `name` FROM `genres` AS `genre` JOIN `movies_genres` ON (`movies_genres`.`genre_id` = `genre`.`id`) WHERE `movies_genres`.`movies_id` IS NULL AND `id` = 2 LIMIT 1 ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:10:38 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `genre`....', false, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1069): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(976): Kohana_ORM->_load_result(false)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(19): Kohana_ORM->find()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:10:58 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:10:58 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:11:12 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`genre_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:11:12 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:11:16 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movies_id' in 'where clause' [ SELECT `genre`.`id` AS `id`, `genre`.`name` AS `name` FROM `genres` AS `genre` JOIN `movies_genres` ON (`movies_genres`.`genre_id` = `genre`.`id`) WHERE `movies_genres`.`movies_id` IS NULL AND `id` = 2 LIMIT 1 ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:11:16 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `genre`....', false, Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1069): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(976): Kohana_ORM->_load_result(false)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(19): Kohana_ORM->find()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:12:36 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movies_id' in 'where clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`movies_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:12:36 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:12:47 --- CRITICAL: Database_Exception [ 1054 ]: Unknown column 'movies_genres.movy_id' in 'on clause' [ SELECT `movie`.`id` AS `id`, `movie`.`title` AS `title`, `movie`.`duration` AS `duration` FROM `movies` AS `movie` JOIN `movies_genres` ON (`movies_genres`.`movy_id` = `movie`.`id`) WHERE `movies_genres`.`movie_id` IS NULL ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+2013-01-09 08:12:47 --- DEBUG: #0 C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(1, 'SELECT `movie`....', 'Model_Movie', Array)
+#1 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1060): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 C:\xampp\htdocs\phpnursery\Cinema\modules\orm\classes\Kohana\ORM.php(1001): Kohana_ORM->_load_result(true)
+#3 C:\xampp\htdocs\phpnursery\Cinema\application\classes\Controller\Seances.php(22): Kohana_ORM->find_all()
+#4 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Controller.php(84): Controller_Seances->action_index()
+#5 [internal function]: Kohana_Controller->execute()
+#6 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Seances))
+#7 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 C:\xampp\htdocs\phpnursery\Cinema\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#9 C:\xampp\htdocs\phpnursery\Cinema\index.php(118): Kohana_Request->execute()
+#10 {main} in C:\xampp\htdocs\phpnursery\Cinema\modules\database\classes\Kohana\Database\Query.php:251
+>>>>>>> d007437fe1eace4acfd578f454b51b7d77aacbaf
