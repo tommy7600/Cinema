@@ -1,3 +1,4 @@
+<?php  $logged_as=Auth::instance()->logged_in('admin') ?>
 <table class=" table table-striped table-bordered">
     <thead>
         <tr>
@@ -7,9 +8,11 @@
             <th>
                 Title
             </th>
-            <th>
-                Options
-            </th>
+            <?php if($logged_as): ?>
+                <th>
+                    Options
+                </th>
+            <?php endif; ?>
         </tr>
     </thead>
 
@@ -23,10 +26,11 @@
                 <th>
                     <?php echo $seance->movie->title; ?>
                 </th>
-                
-                <td>
-                       <a href="wstawLinkaDoRemove" class="confirm"><i class="icon-flag"></i></a>
-                </td>
+                <?php if($logged_as): ?>
+                    <td>
+                           <a href="wstawLinkaDoRemove" class="confirm"><i class="icon-remove"></i></a>
+                    </td>
+                <?php endif; ?>
             </tr>
 
         <?php endforeach; ?>

@@ -39,6 +39,7 @@
             </tr>
         </thead>
         <tbody>
+            <?php var_dump($movies) ?>
             <?php foreach ($movies as $title => $info): ?>
             <tr>
                 <td> <a href="#movieDescription" role="button" data-toggle="modal"> <?php echo $title ?> </a> </td>
