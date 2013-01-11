@@ -6,7 +6,7 @@
 <script src="/assets/js/myJavaScript.js"></script>
 <?php if(isset($movies) AND count($movies) > 0 ): ?>
 <div>
-    <table class="table table-condensed">
+    <table class="table table-striped table-bordered">
         <thead>
             <tr>
                 <th>

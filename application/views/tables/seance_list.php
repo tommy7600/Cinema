@@ -1,4 +1,6 @@
 <?php  $logged_as=Auth::instance()->logged_in('admin') ?>
+<?php include Kohana::find_file('views', 'movie/description')  ?>
+
 <table class=" table table-striped table-bordered">
     <thead>
         <tr>
@@ -27,7 +29,9 @@
                 </td>
 
                 <td>
+                    <a class="movieDescription" href="#movieDescription" role="button" data-toggle="modal" id="<?php echo $seance->movie->id?>">
                     <?php echo $seance->movie->title; ?>
+                    </a>
                 </th>
 
                 <td>

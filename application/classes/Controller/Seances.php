@@ -26,5 +26,17 @@
             $this->template->selected = $date;
             $this->template->seances = $seances;
         }
+        
+        public function action_ajax()
+        {
+            $movieID = $_POST['movieId'];
+            $movies = ORM::factory('movie', (int)$movieID);
+            $tablica = array();
+            $tablica['title'] = $movies->title;
+            $tablica['description'] = $movies->description;
+
+            $this->template = View::factory('json');
+            $this->template->data = $tablica;
+        }
     }
 ?>
