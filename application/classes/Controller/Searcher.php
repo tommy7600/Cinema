@@ -24,6 +24,18 @@ class Controller_Searcher extends Controller_Template_Website {
         $this->set_searching_fields();
     }
     
+    public function action_ajax()
+    {
+        $movieID = $_POST['movieId'];
+        $movies = ORM::factory('movie', (int)$movieID);
+        $tablica = array();
+        $tablica['title'] = $movies->title;
+        $tablica['description'] = $movies->description;
+ 
+        $this->template = View::factory('json');
+        $this->template->data = $tablica;
+    }
+    
     private function set_searching_fields()
     {
         $genres = ORM::factory('Genre')->find_all();
@@ -46,7 +58,7 @@ class Controller_Searcher extends Controller_Template_Website {
         {
             $genres = $this->get_movie_genres($movie);
             $seances = $this->get_movie_seances($movie);
-            $movies_table[$movie->title] = array('genres' => implode(', ', $genres), 'seances' => $seances, 'description' => $movie->description);
+            $movies_table[$movie->id] = array('title' => $movie->title, 'genres' => implode(', ', $genres), 'seances' => $seances);
         }
         $this->template->movies = $movies_table;
     }
@@ -109,7 +121,7 @@ class Controller_Searcher extends Controller_Template_Website {
             if(Date('l', strtotime($seance->date)) != $prev_day)
             {
                 $prev_day = Date('l', strtotime($seance->date));
-                $seance_list[] = '<br>'.$prev_day.' ('.Date('Y-m-d', strtotime($seance->date)).') '.substr(Date($seance->time), 0, -3);
+                $seance_list[] = '<br>'.$prev_day.' ('.substr(Date('d/m/Y', strtotime($seance->date)), 0, -5).') '.substr(Date($seance->time), 0, -3);
             }
             else
             {
