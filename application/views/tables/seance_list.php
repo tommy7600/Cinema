@@ -35,15 +35,19 @@
                 </th>
                 <?php if($logged_as): ?>
                     <td>
-                         <a href="/adm_cinema/delete_show/<?php echo $seance->id ?>
-                            <?php if (isset($selected)): ?>
-                            /?date=<?php echo $selected ?>">                            
+                         <a class="confirm" rel="tooltip" title="Usuń seans" href="/adm_cinema/delete_show/<?php echo $seance->id;
+                         if (isset($selected)): ?>/?date=<?php echo $selected ?>">                            
                                 <?php endif ?>
                          <i class="icon-remove"></i>
                          </a>
+                        <a rel="tooltip" title="Edytuj seans" href="#myModal"  data-toggle="modal"/>                        
+                         <i class="icon-pencil"></i>
+                        </a>                        
+                    <?php include Kohana::find_file('views', 'tables/modal') ?>
                     </td>
                 <?php endif; ?>
             </tr>
         <?php endforeach; ?>
     </tbody>
 </table>
+
